@@ -1,115 +1,101 @@
-# LockedIn <img alt="LockedIn Logo" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="24" height="24">
+<div align="center">
 
-**LockedIn** is a professional networking platform built with modern web technologies. It enables users to connect, share professional experiences, and discover job opportunities. The platform offers a comprehensive suite of features for career development and professional networking.
+# 🔒 LockedIn: Professional Networking Platform
 
----
+**A full-featured LinkedIn clone built by a 20-person engineering team (web, backend, cross-platform, testing and DevOps) as the Software Engineering capstone at Cairo University.**
 
-## ✨ Features
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![React Query](https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+<br/>
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-### 👤 User Profiles
+[**Organization**](https://github.com/ClinkedIn) · [Frontend](https://github.com/ClinkedIn/Frontend) · [Backend](https://github.com/ClinkedIn/Backend) · [Cross-Platform](https://github.com/ClinkedIn/Cross-Platform) · [Testing](https://github.com/ClinkedIn/Testing)
 
-- **Comprehensive Profiles**: Create and customize detailed professional profiles.
-- **Experience & Education**: Showcase your work history and educational background.
-- **Skills Showcase**: Highlight your technical and professional skills.
-- **Profile Privacy Settings**: Control who can view your profile.
-
-### 🔗 Networking
-
-- **Connection Management**: Send, accept, or reject connection requests.
-- **Network Visualization**: View and manage your professional network.
-- **Follow Capability**: Follow professionals without direct connections.
-- **Real-time Updates**: Stay informed about your network's activities.
-
-### 💼 Job Features
-
-- **Job Discovery**: Browse and search for relevant job opportunities.
-- **Job Application**: Apply directly to positions within the platform.
-- **Application Tracking**: Monitor the status of your job applications.
-- **Company Profiles**: View detailed information about potential employers.
-
-### 💬 Communication
-
-- **Real-time Messaging**: Chat with your connections.
-- **Push Notifications**: Stay informed even when the app is in the background.
-- **Email Verification**: Secure account creation.
-
-### 🔐 Security & Authentication
-
-- **Multi-factor Authentication** (OTP support).
-- **Password Management**: Secure password reset and update.
-- **Privacy Controls**: Fine-grained control over your data and visibility.
+</div>
 
 ---
 
-## 🛠️ Technologies
+## 📖 Overview
 
-### Frontend
+**LockedIn** recreates LinkedIn's core experience: professional profiles, a networking graph, a news feed, real-time messaging, a jobs marketplace, company pages, notifications, an admin panel and a Stripe-powered premium plan. The team worked like a real software organisation, in incremental **sprints**, with an **API-first contract** between subteams, a code style for each subteam, auto-generated documentation and unit-test coverage targets.
 
-- **React** – Component-based UI library.
-- **JavaScript** – Strongly typed JavaScript.
-- **TailwindCSS** – Utility-first CSS framework.
-- **React Router** – Declarative routing.
-- **Axios** – HTTP client for API communication.
-- **Chart.js** – Data visualization.
+This repository is my fork of the **web frontend**.
 
-### Backend & Services
+## 👨‍💻 My Contributions (Frontend Engineer)
 
-- **Firebase Authentication** – Email & social login.
-- **Firebase Firestore** – Real-time NoSQL database.
-- **Firebase Cloud Messaging** – Push notifications.
+**28 commits** to the main frontend repository (March to May 2025). I owned the identity, profile and networking areas:
 
-### State Management
+- **My Profile and Other-User Profiles:** profile header, experience, education, skills with **endorsements**, résumé upload, activity feed, and "People you may know". All of it is **integrated with the backend REST API**.
+- **Profile privacy:** *Public / Connections-only / Private* profiles, including a dedicated private-profile view.
+- **Account settings:** update **email**, **username** and **password**, **delete account**, plus a reusable **confirmation dialog** component.
+- **Networking:** **connect / follow / block** buttons, **remove connection**, invitations, connections list, a blocked-users page, and message/block actions on profiles.
+- **Auth flows:** fixed the **forgot-password** experience and its UI consistency.
+- **Testing:** **unit tests with API mocking** (Vitest, Testing Library, axios-mock-adapter / MSW) for Forgot Password, Update Username and Update Password.
+- **Documentation:** **JSDoc** functional documentation for the profile modules, published as HTML docs.
 
-- **React Context API** – Global state management.
+## ✨ Platform Features (team)
 
-### Testing
+| Module | Highlights |
+|---|---|
+| 🔐 Authentication | Register with reCAPTCHA, email verification, password reset, Google sign-in, account deletion |
+| 👤 Profiles | Experience, education, skills and endorsements, résumé, profile and cover photos, privacy levels |
+| 🔗 Networking | Search, connection requests, follow, block/unblock, connections & invitations |
+| 📰 Feed | Posts with media, reactions, comments, reposts, hashtags, saved posts, reporting |
+| 💬 Messaging | 1:1 conversations, media messages, read receipts, unread counts, blocking |
+| 🔔 Notifications | Real-time notifications for reactions, comments, connections and messages (Firebase Cloud Messaging) |
+| 💼 Jobs | Job search & filters, applications with screening questions, application tracking, employer hiring dashboard |
+| 🏢 Company Pages | Create and manage company pages, posts, followers and analytics |
+| 🛡️ Admin Panel | Reported content moderation, job listing management, platform analytics |
+| 💳 Premium | Subscription plans and payment flow with **Stripe** (test mode) |
 
-- **Vitest** – Unit testing framework.
-- **React Testing Library** – Component testing.
+## 🏗️ Architecture
 
----
+```
+┌───────────────────────────┐        REST (Swagger-documented)        ┌──────────────────────────────┐
+│  Web Frontend (this repo) │ ──────────────────────────────────────▶ │  Backend: Node.js / Express  │
+│  React · TS · Redux ·     │                                         │  MongoDB · JWT · Cloudinary  │
+│  React Query · Tailwind   │ ◀──── Firebase Cloud Messaging ──────── │  Firebase · Stripe · Mailer  │
+└───────────────────────────┘                                         └──────────────────────────────┘
+┌───────────────────────────┐                                         ┌──────────────────────────────┐
+│  Cross-Platform (Flutter) │ ─────────────── same API ─────────────▶ │  Testing team: E2E suites    │
+└───────────────────────────┘                                         └──────────────────────────────┘
+                        DevOps: Docker images · CI/CD · cloud deployment
+```
 
-## 🚀 Getting Started
+## 🧰 Frontend Tech Stack
 
-### ✅ Prerequisites
+| Area | Tools |
+|---|---|
+| UI | React 19, TypeScript & JavaScript, Tailwind CSS, Headless UI, Framer Motion, Font Awesome, Lucide |
+| State & data | Redux Toolkit, TanStack React Query, Axios, React Router |
+| Charts | Chart.js, Recharts |
+| Integrations | Firebase (auth & push), Google reCAPTCHA, Stripe |
+| Quality | Vitest, Jest, React Testing Library, MSW, axios-mock-adapter, ESLint, JSDoc |
+| Build & deploy | Vite (SWC), Docker |
 
-- Node.js (v16 or later)
-- npm (v8 or later)
-- A Firebase project
+## 🚀 Running Locally
 
-### 📦 Installation
+```bash
+git clone https://github.com/Mohamedd-Ayyman/Lockedin-Frontend.git
+cd Lockedin-Frontend
+npm install
+cp .env.example .env   # set the API base URL and Firebase keys
+npm run dev
+```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/tahaaa22/ClinkedIn/Frontend.git
-   cd Frontend
-### 🔧 Firebase Setup
-Create a Firebase project.
-Add a web app to the Firebase project.
-Download and place firebase-config.js in the appropriate directory.
-Enable:
-Firebase Authentication
-Firestore
-Cloud Messaging
+## 🤝 Team
 
-### 🏗️ Architecture
-LockedIn uses a component-based architecture with a clean separation of concerns:
+LockedIn was built by around 20 engineers organised into **Frontend**, **Backend**, **Cross-Platform**, **Testing** and **DevOps** subteams under a team leader. Thanks to every teammate in the [ClinkedIn](https://github.com/ClinkedIn) organisation.
 
-Components – Reusable UI elements.
-Pages – Page-level components for routing.
-Context – Global state management.
-Hooks – Custom React hooks for reusable logic.
-Utils – Utility functions for common tasks.
+## 👤 Author
 
-### 🔄 Workflow
-Authentication – Email sign-up/login with verification.
-Profile Creation – Build out your professional profile.
-Networking – Connect or follow other professionals.
-Job Exploration – Discover and apply for jobs.
-Notifications – Get updates on connections and job status.
-
-### 🤝 Contributing
-Contributions are welcome! To contribute:
-
-1) Fork the repository.
-2) Create a new branch.
+**Mohamed Ayman**, Frontend Engineer · [GitHub](https://github.com/Mohamedd-Ayyman) · [LinkedIn](https://linkedin.com/in/mohamed-ayman-8787b0269)
