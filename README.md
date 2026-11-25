@@ -2,7 +2,7 @@
 
 # 🔒 LockedIn: Professional Networking Platform
 
-**A full-featured LinkedIn clone built by a 20-person engineering team (web, backend, cross-platform, testing and DevOps) as the Software Engineering capstone at Cairo University.**
+**A full-featured LinkedIn clone built by a ~20-person engineering team (web, backend, cross-platform, testing and DevOps) as the Software Engineering capstone at Cairo University.**
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -75,7 +75,7 @@ This repository is my fork of the **web frontend**.
 
 | Area | Tools |
 |---|---|
-| UI | React 19, TypeScript & JavaScript, Tailwind CSS, Headless UI, Framer Motion, Font Awesome, Lucide |
+| UI | React, TypeScript & JavaScript, Tailwind CSS, Headless UI, Framer Motion, Font Awesome, Lucide |
 | State & data | Redux Toolkit, TanStack React Query, Axios, React Router |
 | Charts | Chart.js, Recharts |
 | Integrations | Firebase (auth & push), Google reCAPTCHA, Stripe |
